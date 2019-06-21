@@ -52,7 +52,7 @@ SELECT name FROM bbc
          WHERE region = 'Europe')
    AND region = 'South Asia'
    
-syntax:
+result:
 ______________
 | Bangladesh |
 |  India     |
