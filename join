@@ -7,7 +7,7 @@ syntax:
  
 2.You JOIN the tables goal and eteam in an SQL statement. Indicate the list of column names that may be used in the SELECT line:
 
-syntax:
+result:
  matchid, teamid, player, gtime, id, teamname, coach
  
 3.Select the code which shows players, their team and the amount of goals they scored against Greece(GRE).
@@ -49,12 +49,12 @@ SELECT DISTINCT player, teamid, gtime
    
 7.  Select the result that would be obtained from this code:
 
-syntax:
+result:
 ___________________________
-|  Netherlands       |	2 |
-|       Poland	     |  2 |
-|Republic of Ireland |	1 |
-|    Ukraine	       |  2 |
+|  Netherlands       |	 2 |
+|       Poland	      |  2 |
+|Republic of Ireland |	 1 |
+|    Ukraine	        |  2 |
 |____________________|____|
 
 
