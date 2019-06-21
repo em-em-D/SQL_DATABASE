@@ -30,7 +30,67 @@ where name in ('france','germany','italy')
 6.Show the countries which have a name that includes the word 'United'
 syntax:
 select name from world
-where name = 'united'
+where name like 'united'
+
+7.Two ways to be big: A country is big if it has an area of more than 3 million sq km or it has a population of more than 250 million.
+Show the countries that are big by area or big by population. Show name, population and area.
+syntax:
+select name,population, area from world
+where area > 3000000 or population >= 250000000
+
+9.show the name and population in millions and the GDP in billions for the countries of the continent 'South America'. Use the ROUND function to show the values to two decimal places.
+For South America show population in millions and GDP in billions both to 2 decimal places.
+Millions and billions
+syntax:
+
+select name, round(population)/1000000, round(gdp)/1000000000 from world
+where continent in ('south america')
+
+##QUIZZES##
+
+1. Select the code which gives the name of countries beginning with U
+syntax:
+SELECT name
+  FROM world
+ WHERE name LIKE 'U%'
+2. Select the code which shows just the population of United Kingdom?
+syntax:
+SELECT population
+  FROM world
+ WHERE name = 'United Kingdom'
+ 
+3. Select the answer which shows the problem with this SQL code - the intended result should be the continent of France:
+syntax:
+'name' should be name
+
+4.Select the result that would be obtained from the following code:
+ (SELECT name, population / 10 
+  FROM world 
+ WHERE population < 10000)
+ 
+ SYNTAX:
+ 
+Nauru | 990
+
+5. Select the code which would reveal the name and population of countries in Europe and Asia
+syntax:
+SELECT name, population
+  FROM world
+ WHERE continent IN ('Europe', 'Asia')
+ 
+ 6. Select the code which would give two rows
+ syntax:
+ SELECT name FROM world
+ WHERE name IN ('Cuba', 'Togo')
+ 
+ 7. Select the result that would be obtained from this code:
+ syntax:
+___________ 
+|  Brazil  |
+|__________|
+| Colombia |
+|__________|
+ 
 
 
 
